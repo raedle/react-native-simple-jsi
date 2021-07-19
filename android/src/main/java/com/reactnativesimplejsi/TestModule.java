@@ -1,5 +1,7 @@
 package com.reactnativesimplejsi;
 
+import android.os.SystemClock;
+
 import androidx.annotation.NonNull;
 
 import com.facebook.react.bridge.Arguments;
@@ -9,6 +11,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableArray;
+import com.facebook.react.bridge.WritableMap;
 
 public class TestModule extends ReactContextBaseJavaModule {
 
@@ -1039,5 +1042,49 @@ public class TestModule extends ReactContextBaseJavaModule {
     @ReactMethod(isBlockingSynchronousMethod = true)
     public WritableArray myArrSync() throws Exception {
         return Arguments.fromJavaArgs(this.myArr);
+    }
+
+    private int argmax(Double[] arr) {
+        double maxValue = -Double.MAX_VALUE;
+        int maxIdx = -1;
+        for (int i = 0; i < arr.length; i++) {
+          if (arr[i] > maxValue) {
+            maxValue = arr[i];
+            maxIdx = i;
+          }
+        }
+        return maxIdx;
+    }
+
+    private WritableMap runTest(int iterations) {
+        int maxIdx = -1;
+        double totalTime = 0;
+        Double[] times = new Double[iterations];
+        for (int i = 0; i < iterations; i++) {
+            final long startTime = SystemClock.elapsedRealtimeNanos();
+            maxIdx = argmax(this.myArr);
+            final double elapsedTime = (SystemClock.elapsedRealtimeNanos() - startTime) / 1000.0 / 1000.0;
+            times[i] = elapsedTime;
+            totalTime += elapsedTime;
+        }
+
+        WritableMap result = Arguments.createMap();
+        result.putInt("maxIdx", maxIdx);
+        result.putArray("times", Arguments.fromJavaArgs(times));
+        result.putDouble("totalTime", totalTime);
+        result.putDouble("avgTime", totalTime / iterations);
+        return result;
+    }
+
+    @ReactMethod()
+    public void runNativeTest(int iterations, Promise promise) {
+        WritableMap result = runTest(iterations);
+        promise.resolve(result);
+    }
+
+    @ReactMethod(isBlockingSynchronousMethod = true)
+    public WritableMap runNativeTestSync(int iterations) {
+        WritableMap result = runTest(iterations);
+        return result;
     }
 }

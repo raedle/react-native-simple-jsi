@@ -34,6 +34,8 @@ export default function App() {
 
   const iterations = React.useMemo(() => 2500, []);
 
+  const [nativeSyncResult, setNativeSyncResult] = React.useState();
+  const [nativeAsyncResult, setNativeAsyncResult] = React.useState();
   const [jsiResult, setJsiResult] = React.useState();
   const [asyncResult, setAsyncResult] = React.useState();
   const [syncResult, setSyncResult] = React.useState();
@@ -41,25 +43,63 @@ export default function App() {
   const runBenchmark = React.useCallback(async () => {
     setHasBenchmarks(true);
 
+    setNativeSyncResult(undefined);
     setJsiResult(undefined);
     setAsyncResult(undefined);
     setSyncResult(undefined);
+
+    let startTime;
+
+    startTime = performance.now();
+    const nativeSyncRes = TestModule.runNativeTestSync(iterations);
+    console.log({
+      nativeSyncTime: performance.now() - startTime,
+    });
+    // console.log({
+    //   nativeSyncTimes: nativeSyncRes.times,
+    // });
+    setNativeSyncResult([nativeSyncRes.maxIdx, nativeSyncRes.totalTime, nativeSyncRes.avgTime, nativeSyncRes.times]);
+
+    startTime = performance.now();
+    const nativeAsyncRes = await TestModule.runNativeTest(iterations);
+    console.log({
+      nativeAsyncTime: performance.now() - startTime,
+    });
+    console.log({
+      nativeAsyncTimes: nativeAsyncRes.times,
+    });
+    setNativeAsyncResult([nativeAsyncRes.maxIdx, nativeAsyncRes.totalTime, nativeAsyncRes.avgTime, nativeAsyncRes.times]);
+
+    startTime = performance.now();
     const jsiRes = await runTest(() => global.myArrFunc(), iterations);
     console.log({
-      jsiTimes: jsiRes[3],
+      jsiTime: performance.now() - startTime,
     });
+    // console.log({
+    //   jsiTimes: jsiRes[3],
+    // });
     setJsiResult(jsiRes);
+
+    startTime = performance.now();
     const asyncRes = await runTest(() => TestModule.myArr(), iterations);
-    // console.log({
-    //   asyncTimes: asyncRes[3],
-    // });
+    console.log({
+      syncTime: performance.now() - startTime,
+    });
+    // // console.log({
+    // //   asyncTimes: asyncRes[3],
+    // // });
     setAsyncResult(asyncRes);
+    
+    startTime = performance.now();
     const syncRes = await runTest(() => TestModule.myArrSync(), iterations);
-    // console.log({
-    //   syncTimes: syncRes[3],
-    // });
+    console.log({
+      asyncTime: performance.now() - startTime,
+    });
+    // // console.log({
+    // //   syncTimes: syncRes[3],
+    // // });
     setSyncResult(syncRes);
-  }, [setHasBenchmarks, iterations, setJsiResult, setAsyncResult, setSyncResult]);
+  }, [setHasBenchmarks, iterations, setNativeSyncResult, setNativeAsyncResult, setJsiResult, setAsyncResult, setSyncResult]);
 
   return (
     <View style={styles.container}>
@@ -68,9 +108,11 @@ export default function App() {
 
       {hasBenchmarks && <Text style={styles.header}>Test Results</Text>}
       {hasBenchmarks && <Text style={styles.description}>Executing argmax on a 1000 elements array with {iterations} iterations</Text>}
-      {hasBenchmarks ? jsiResult ? <Text >Jsi result: {jsiResult[0]} (avgTime={jsiResult[1]}ms, totalTime={jsiResult[2]}ms)</Text> : <ActivityIndicator size="small" color="#0000ff" /> : null}
-      {hasBenchmarks ? asyncResult ? <Text >Async result: {asyncResult[0]} (avgTime={asyncResult[1]}ms, totalTime={asyncResult[2]}ms)</Text> : <ActivityIndicator size="small" color="#0000ff" /> : null}
-      {hasBenchmarks ? syncResult ? <Text >Sync result: {syncResult[0]} (avgTime={syncResult[1]}ms, totalTime={syncResult[2]}ms)</Text> : <ActivityIndicator size="small" color="#0000ff" /> : null}
+      {hasBenchmarks ? nativeSyncResult ? <Text >Native sync result: {nativeSyncResult[0]} (totalTime={nativeSyncResult[1]}ms, avgTime={nativeSyncResult[2]}ms)</Text> : <ActivityIndicator size="small" color="#0000ff" /> : null}
+      {hasBenchmarks ? nativeAsyncResult ? <Text >Native async result: {nativeAsyncResult[0]} (totalTime={nativeAsyncResult[1]}ms, avgTime={nativeAsyncResult[2]}ms)</Text> : <ActivityIndicator size="small" color="#0000ff" /> : null}
+      {hasBenchmarks ? jsiResult ? <Text >Jsi result: {jsiResult[0]} (totalTime={jsiResult[1]}ms, avgTime={jsiResult[2]}ms)</Text> : <ActivityIndicator size="small" color="#0000ff" /> : null}
+      {hasBenchmarks ? asyncResult ? <Text >Async result: {asyncResult[0]} (totalTime={asyncResult[1]}ms, avgTime={asyncResult[2]}ms)</Text> : <ActivityIndicator size="small" color="#0000ff" /> : null}
+      {hasBenchmarks ? syncResult ? <Text >Sync result: {syncResult[0]} (totalTime={syncResult[1]}ms, avgTime={syncResult[2]}ms)</Text> : <ActivityIndicator size="small" color="#0000ff" /> : null}
     </View>
   );
 }
