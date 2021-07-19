@@ -44,20 +44,20 @@ export default function App() {
     setJsiResult(undefined);
     setAsyncResult(undefined);
     setSyncResult(undefined);
-    const jsiRes = await runTest(() => global.myArr, iterations);
+    const jsiRes = await runTest(() => global.myArrFunc(), iterations);
     console.log({
       jsiTimes: jsiRes[3],
     });
     setJsiResult(jsiRes);
     const asyncRes = await runTest(() => TestModule.myArr(), iterations);
-    console.log({
-      asyncTimes: asyncRes[3],
-    });
+    // console.log({
+    //   asyncTimes: asyncRes[3],
+    // });
     setAsyncResult(asyncRes);
     const syncRes = await runTest(() => TestModule.myArrSync(), iterations);
-    console.log({
-      syncTimes: syncRes[3],
-    });
+    // console.log({
+    //   syncTimes: syncRes[3],
+    // });
     setSyncResult(syncRes);
   }, [setHasBenchmarks, iterations, setJsiResult, setAsyncResult, setSyncResult]);
 
