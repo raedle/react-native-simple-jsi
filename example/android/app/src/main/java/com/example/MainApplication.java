@@ -1,4 +1,4 @@
-package com.example;
+package com.example.reactnativesimplejsi;
 
 import android.app.Application;
 import android.content.Context;

@@ -131,7 +131,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example"
+        applicationId "com.example.reactnativesimplejsi"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -181,6 +181,10 @@ android {
 
         }
     }
+
+    packagingOptions {
+        pickFirst '**/*.so'
+    }
 }
 
 dependencies {
@@ -210,6 +214,8 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    implementation project(':reactnativesimplejsi')
 }
 
 // Run this once to be able to run the application with BUCK

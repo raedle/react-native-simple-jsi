@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/raedle/Projects/react-native-simple-jsi/android/.cxx/cmake/debug/arm64-v8a'
+[1/1] Linking CXX shared library ../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libcpp.so

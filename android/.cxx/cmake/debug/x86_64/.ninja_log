@@ -1,0 +1,23 @@
+# ninja log v5
+1	86	1626657114	CMakeFiles/cpp.dir/cpp-adapter.cpp.o	85de811901fde607
+0	1156	1626657115	CMakeFiles/cpp.dir/Users/raedle/Projects/react-native-simple-jsi/cpp/example.cpp.o	6f0f14ab9752566f
+1156	1259	1626657115	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+2	70	1626657437	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+1	72	1626657800	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+1	60	1626657966	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+2	93	1626658061	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+1	61	1626658138	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+1	71	1626658180	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+1	756	1626658579	CMakeFiles/cpp.dir/Users/raedle/Projects/react-native-simple-jsi/cpp/example.cpp.o	6f0f14ab9752566f
+756	813	1626658579	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+1	890	1626658733	CMakeFiles/cpp.dir/Users/raedle/Projects/react-native-simple-jsi/cpp/example.cpp.o	6f0f14ab9752566f
+890	943	1626658733	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+1	45	1626659083	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+1	52	1626659171	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+2	53	1626659271	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+2	58	1626659349	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+2	52	1626659817	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+1	57	1626660790	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+1	71	1626661042	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+2	45	1626666814	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75
+1	43	1626666905	../../../../build/intermediates/cmake/debug/obj/x86_64/libcpp.so	66d65a0dc6ac2e75

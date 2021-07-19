@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/raedle/Projects/react-native-simple-jsi/android/CMakeLists.txt",
+    "/opt/android_sdk/ndk/20.1.5948944/build/cmake/android.toolchain.cmake",
+    "/opt/android_sdk/ndk/20.1.5948944/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/opt/android_sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/raedle/Projects/react-native-simple-jsi/android/.cxx/cmake/debug/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/opt/android_sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/raedle/Projects/react-native-simple-jsi/android/.cxx/cmake/debug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "cpp-Debug-x86_64": {
+      "artifactName": "cpp",
+      "buildCommand": "/opt/android_sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/raedle/Projects/react-native-simple-jsi/android/.cxx/cmake/debug/x86_64\" cpp",
+      "abi": "x86_64",
+      "output": "/Users/raedle/Projects/react-native-simple-jsi/android/build/intermediates/cmake/debug/obj/x86_64/libcpp.so",
+      "runtimeFiles": []
+    }
+  }
+}

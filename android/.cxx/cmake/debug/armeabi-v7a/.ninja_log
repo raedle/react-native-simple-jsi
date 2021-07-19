@@ -1,0 +1,23 @@
+# ninja log v5
+0	151	1626657109	CMakeFiles/cpp.dir/cpp-adapter.cpp.o	4498f56e2eb9b404
+0	1465	1626657111	CMakeFiles/cpp.dir/Users/raedle/Projects/react-native-simple-jsi/cpp/example.cpp.o	8521a97a09190b01
+1466	1620	1626657111	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+2	98	1626657437	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	82	1626657800	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	81	1626657965	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	104	1626658061	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	76	1626658138	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	80	1626658180	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+2	1152	1626658576	CMakeFiles/cpp.dir/Users/raedle/Projects/react-native-simple-jsi/cpp/example.cpp.o	8521a97a09190b01
+1152	1213	1626658576	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+2	1076	1626658729	CMakeFiles/cpp.dir/Users/raedle/Projects/react-native-simple-jsi/cpp/example.cpp.o	8521a97a09190b01
+1076	1154	1626658729	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	50	1626659083	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+2	62	1626659171	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	68	1626659271	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	56	1626659348	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	58	1626659817	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	60	1626660790	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	60	1626661041	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	49	1626666814	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0
+1	50	1626666904	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so	31a9f6ba4bd321f0

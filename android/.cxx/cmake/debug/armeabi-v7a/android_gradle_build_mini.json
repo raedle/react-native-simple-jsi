@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/raedle/Projects/react-native-simple-jsi/android/CMakeLists.txt",
+    "/opt/android_sdk/ndk/20.1.5948944/build/cmake/android.toolchain.cmake",
+    "/opt/android_sdk/ndk/20.1.5948944/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/opt/android_sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/raedle/Projects/react-native-simple-jsi/android/.cxx/cmake/debug/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/opt/android_sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/raedle/Projects/react-native-simple-jsi/android/.cxx/cmake/debug/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "cpp-Debug-armeabi-v7a": {
+      "artifactName": "cpp",
+      "buildCommand": "/opt/android_sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/raedle/Projects/react-native-simple-jsi/android/.cxx/cmake/debug/armeabi-v7a\" cpp",
+      "abi": "armeabi-v7a",
+      "output": "/Users/raedle/Projects/react-native-simple-jsi/android/build/intermediates/cmake/debug/obj/armeabi-v7a/libcpp.so",
+      "runtimeFiles": []
+    }
+  }
+}

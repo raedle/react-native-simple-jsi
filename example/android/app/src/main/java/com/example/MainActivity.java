@@ -1,4 +1,4 @@
-package com.example;
+package com.example.reactnativesimplejsi;
 
 import com.facebook.react.ReactActivity;
 

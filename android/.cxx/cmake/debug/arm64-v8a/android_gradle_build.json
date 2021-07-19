@@ -1,0 +1,48 @@
+{
+  "stringTable": {
+    "0": "/Users/raedle/Projects/react-native-simple-jsi/android/.cxx/cmake/debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=/opt/android_sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/opt/android_sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dcpp_EXPORTS -I/Users/raedle/Projects/react-native-simple-jsi/example/android/../node_modules/react-native/React -I/Users/raedle/Projects/react-native-simple-jsi/example/android/../node_modules/react-native/React/Base -I/Users/raedle/Projects/react-native-simple-jsi/example/android/../node_modules/react-native/ReactAndroid/src/main/jni -I/Users/raedle/Projects/react-native-simple-jsi/example/android/../node_modules/react-native/ReactAndroid/src/main/java/com/facebook/react/turbomodule/core/jni -I/Users/raedle/Projects/react-native-simple-jsi/example/android/../node_modules/react-native/ReactCommon -I/Users/raedle/Projects/react-native-simple-jsi/example/android/../node_modules/react-native/ReactCommon/callinvoker -I/Users/raedle/Projects/react-native-simple-jsi/example/android/../node_modules/react-native/ReactCommon/jsi -I../../../../../cpp -DFOLLY_NO_CONFIG=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_HAVE_MEMRCHR=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_MOBILE=1 -DON_ANDROID -O0 -fno-limit-debug-info -fno-experimental-isel -fPIC -std=gnu++14"
+  },
+  "buildFiles": [
+    "/Users/raedle/Projects/react-native-simple-jsi/android/CMakeLists.txt",
+    "/opt/android_sdk/ndk/20.1.5948944/build/cmake/android.toolchain.cmake",
+    "/opt/android_sdk/ndk/20.1.5948944/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/opt/android_sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/raedle/Projects/react-native-simple-jsi/android/.cxx/cmake/debug/arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "/opt/android_sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/raedle/Projects/react-native-simple-jsi/android/.cxx/cmake/debug/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "cpp-Debug-arm64-v8a": {
+      "buildCommand": "/opt/android_sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/raedle/Projects/react-native-simple-jsi/android/.cxx/cmake/debug/arm64-v8a\" cpp",
+      "buildType": "debug",
+      "toolchain": "2732900185",
+      "abi": "arm64-v8a",
+      "artifactName": "cpp",
+      "files": [
+        {
+          "src": "/Users/raedle/Projects/react-native-simple-jsi/cpp/example.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/raedle/Projects/react-native-simple-jsi/android/cpp-adapter.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/raedle/Projects/react-native-simple-jsi/android/build/intermediates/cmake/debug/obj/arm64-v8a/libcpp.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "2732900185": {
+      "cppCompilerExecutable": "/opt/android_sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

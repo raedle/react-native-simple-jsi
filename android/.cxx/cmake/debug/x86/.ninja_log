@@ -1,0 +1,23 @@
+# ninja log v5
+1	84	1626657112	CMakeFiles/cpp.dir/cpp-adapter.cpp.o	b766b1e16a89bb73
+0	1388	1626657113	CMakeFiles/cpp.dir/Users/raedle/Projects/react-native-simple-jsi/cpp/example.cpp.o	3182225c8d78c8f6
+1388	1460	1626657114	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+2	87	1626657437	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+2	87	1626657800	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	52	1626657966	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	78	1626658061	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	84	1626658138	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	68	1626658180	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	1107	1626658578	CMakeFiles/cpp.dir/Users/raedle/Projects/react-native-simple-jsi/cpp/example.cpp.o	3182225c8d78c8f6
+1107	1154	1626658578	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	1062	1626658732	CMakeFiles/cpp.dir/Users/raedle/Projects/react-native-simple-jsi/cpp/example.cpp.o	3182225c8d78c8f6
+1062	1137	1626658732	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	43	1626659083	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	45	1626659171	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	46	1626659271	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	53	1626659348	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	51	1626659817	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	49	1626660790	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+2	59	1626661042	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	43	1626666814	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
+1	52	1626666905	../../../../build/intermediates/cmake/debug/obj/x86/libcpp.so	d6d59a0efbde8a9c
